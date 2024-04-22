@@ -1,7 +1,7 @@
 # Tattoo Website
 
 This is a simple tattoo website project built using HTML, CSS, and JavaScript.
-You can see the webcite by visitin this [LINK}(https://art-skin-tattoo.vercel.app/)
+You can see the webcite by visitin this [LINK](https://art-skin-tattoo.vercel.app/)
 
 ## Description
 
