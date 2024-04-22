@@ -1,0 +1,181 @@
+.form {
+    border: 10px solid #428BDD;
+    margin: 0 100px 150px;
+    padding: 40px 34px;
+}
+
+.text_form {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 75.21px;
+    color: #EDEDED;
+}
+
+.form-sbt {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 24.17px;
+    color: #EDEDED;
+    text-transform: uppercase;
+}
+
+.additional-txt{
+    color: #428BDD;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.form_content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info_in_formField_column1 {
+    height: 45px;
+    max-width: 100%;
+    width: 100%;
+    color: #EDEDED;
+    background-color: #1E1E1E;
+    border-right: 1px #EDEDED;
+    font-size: 16px;
+}
+
+.sketch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.or_form {
+    color: #428BDD;
+}
+
+.custom-btn {
+    padding: 12px 24px;
+    background-color: #1E1E1E;
+    border: 1px #EDEDED solid;
+    color: #EDEDED;
+    transition-duration: 0.5s;
+}
+
+.custom-btn:hover{
+    background-color: #428BDD;
+    border: 1px #428BDD solid;
+}
+
+.right_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.checkboxes label.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    color: #EDEDED;
+    font-weight: 400;
+}
+
+.checkboxes input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    opacity: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"] + label.checkbox {
+    position: relative; /* Встановлюємо відносне позиціонування для можливості абсолютного позиціонування псевдоелемента */
+}
+
+.checkboxes input[type="checkbox"] + label.checkbox:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #EDEDED;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"]:checked + label.checkbox:after {
+    content: ''; /* Додаємо псевдоелемент, який буде представляти зображення галочки */
+    display: block;
+    position: absolute; /* Встановлюємо абсолютне позиціонування для псевдоелемента */
+    margin-top: 6px;
+    left: 13px;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background-color: #EDEDED; /* Колір галочки */
+    border-radius: 50%; /* Заокруглення для галочки */
+    cursor: pointer;
+}
+
+
+#datePicker {
+    display: none;
+    background-color: #1E1E1E;
+    color: #EDEDED;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 232px;
+    height: auto;
+    border: 1px solid #EDEDED;
+    padding: 10px;
+}
+
+#datePicker::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+@media screen and (max-width: 1024px) {
+    .form  {
+        padding: 50px;
+        margin: 50px;
+    }
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .form {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 548px) {
+
+    .form-title {
+        font-size: 24px;
+        line-height: 36.21px;
+    }
+
+}
+
